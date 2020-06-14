@@ -1,6 +1,6 @@
 resource "null_resource" "depends_on" {
     triggers = {
-        depends_on = join("", var.lb_target_group_attachment_depends_on)
+        depends_on = join("", var.launch_template_depends_on)
     }
 }
 
